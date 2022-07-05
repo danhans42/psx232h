@@ -1,0 +1,2 @@
+littlelibc.o: littlelibc.c littlelibc.h \
+ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include/stdarg.h

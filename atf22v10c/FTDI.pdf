@@ -1,0 +1,129 @@
+{COMPONENT C:\USERS\DAN\DESKTOP\PSX232H\ATF22V10C\FTDI.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Tue Jul 05 20:25:03 2022 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P WR_IN {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P RD_IN {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P CS_IN {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P RST {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P CS_OUT {Pt "I/O"}{Lq 0}{Ploc 310 20}}
+   {P RD_OUT {Pt "I/O"}{Lq 0}{Ploc 310 40}}
+   {P WR_OUT {Pt "I/O"}{Lq 0}{Ploc 310 60}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 205 130}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 110}
+   [Ts 15][Tj "RC"]
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 290 30}
+   {Pnl 290 50}
+   {Pnl 290 70}
+
+   {Sd A 1 2 3 4 21 22 23}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 120 280 0}
+   {L 130 100 100 100}
+   {L 130 110 140 100 130 90}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 280 20 310 20}
+   {L 280 40 310 40}
+   {L 280 60 310 60}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "WR_IN" 140 100}
+   {T "RD_IN" 140 60}
+   {T "CS_IN" 140 40}
+   {T "RST" 140 20}
+   [Tj "RC"]
+   {T "CS_OUT" 270 20}
+   {T "RD_OUT" 270 40}
+   {T "WR_OUT" 270 60}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G22V10" 205 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\DAN\DESKTOP\PSX232H\ATF22V10C\FTDI 205 120}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N WR_IN
+   }
+   {N RD_IN
+   }
+   {N CS_IN
+   }
+   {N RST
+   }
+   {N CS_OUT
+   }
+   {N RD_OUT
+   }
+   {N WR_OUT
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

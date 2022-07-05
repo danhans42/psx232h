@@ -1,0 +1,33 @@
+%SIGNAL
+PIN   3 =  CS_IN 
+PIN  21 =  CS_OUT 
+PIN   2 =  RD_IN 
+PIN  22 =  RD_OUT 
+PIN   4 =  RST 
+PIN   1 =  WR_IN 
+PIN  23 =  WR_OUT 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!CS_OUT =>
+    !CS_IN & RST
+
+!RD_OUT =>
+    !RD_IN & RST
+
+!WR_OUT =>
+    RST & !WR_IN
+
+CS_OUT.oe  =>
+    1 
+
+RD_OUT.oe  =>
+    1 
+
+WR_OUT.oe  =>
+    1 
+
+%END

@@ -1,0 +1,2 @@
+utility.o: utility.c utility.h littlelibc.h \
+ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include/stdarg.h

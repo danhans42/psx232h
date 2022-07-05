@@ -1,0 +1,5 @@
+main.o: main.c /usr/lib/gcc-cross/mipsel-linux-gnu/10/include/stdarg.h \
+ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include/stdint.h \
+ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include/stdint-gcc.h \
+ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include/stddef.h main.h \
+ littlelibc.h utility.h drawing.h config.h gpu.h

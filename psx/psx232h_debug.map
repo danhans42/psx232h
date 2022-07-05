@@ -1,0 +1,441 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 littlelibc.o
+ .data          0x0000000000000000        0x0 littlelibc.o
+ .bss           0x0000000000000000        0x0 littlelibc.o
+ .reginfo       0x0000000000000000       0x18 littlelibc.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 littlelibc.o
+ .pdr           0x0000000000000000       0xa0 littlelibc.o
+ .mdebug.abi32  0x0000000000000000        0x0 littlelibc.o
+ .text.NewStrcpy
+                0x0000000000000000       0x7c littlelibc.o
+ .text.NewMemcpy
+                0x0000000000000000       0x98 littlelibc.o
+ .text.NewStrncmp
+                0x0000000000000000      0x104 littlelibc.o
+ .text.NewStrcmp
+                0x0000000000000000       0xf8 littlelibc.o
+ .text.NewSPrintf
+                0x0000000000000000      0x634 littlelibc.o
+ .rodata        0x0000000000000000       0x70 littlelibc.o
+ .debug_info    0x0000000000000000      0x397 littlelibc.o
+ .debug_abbrev  0x0000000000000000      0x15a littlelibc.o
+ .debug_loc     0x0000000000000000      0x784 littlelibc.o
+ .debug_aranges
+                0x0000000000000000       0x40 littlelibc.o
+ .debug_ranges  0x0000000000000000       0x30 littlelibc.o
+ .debug_line    0x0000000000000000      0x5ac littlelibc.o
+ .debug_str     0x0000000000000000      0x271 littlelibc.o
+ .comment       0x0000000000000000       0x2c littlelibc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 littlelibc.o
+ .debug_frame   0x0000000000000000       0xc8 littlelibc.o
+ .gnu.attributes
+                0x0000000000000000       0x10 littlelibc.o
+ .text          0x0000000000000000        0x0 main.o
+ .bss           0x0000000000000000        0x0 main.o
+ .reginfo       0x0000000000000000       0x18 main.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 main.o
+ .pdr           0x0000000000000000      0x100 main.o
+ .text.FT_SendString
+                0x0000000000000000       0x4c main.o
+ .text.FT_Send32
+                0x0000000000000000       0x3c main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .text          0x0000000000000000        0x0 nugget/crt0/crt0.o
+ .data          0x0000000000000000        0x0 nugget/crt0/crt0.o
+ .bss           0x0000000000000000        0x0 nugget/crt0/crt0.o
+ .reginfo       0x0000000000000000       0x18 nugget/crt0/crt0.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 nugget/crt0/crt0.o
+ .text          0x0000000000000000        0x0 utility.o
+ .data          0x0000000000000000        0x0 utility.o
+ .bss           0x0000000000000000        0x0 utility.o
+ .reginfo       0x0000000000000000       0x18 utility.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 utility.o
+ .pdr           0x0000000000000000      0x180 utility.o
+ .text.Delay    0x0000000000000000       0x68 utility.o
+ .text.UnloadMe
+                0x0000000000000000       0x60 utility.o
+ .text.AddDevice
+                0x0000000000000000       0x3c utility.o
+ .text.RemoveDevice
+                0x0000000000000000       0x3c utility.o
+ .text.PrintDevices
+                0x0000000000000000       0x34 utility.o
+ .text.CloseFile
+                0x0000000000000000       0x40 utility.o
+ .text.OpenFile
+                0x0000000000000000       0x44 utility.o
+ .text.ResetEntryInt
+                0x0000000000000000       0x10 utility.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 utility.o
+ .text          0x0000000000000000        0x0 drawing.o
+ .data          0x0000000000000000        0x0 drawing.o
+ .reginfo       0x0000000000000000       0x18 drawing.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 drawing.o
+ .pdr           0x0000000000000000      0x180 drawing.o
+ .text.GetFrameCount
+                0x0000000000000000       0x10 drawing.o
+ .text.BorderTileRGB
+                0x0000000000000000       0x24 drawing.o
+ .text.BorderTile
+                0x0000000000000000       0x70 drawing.o
+ .text.Lerp     0x0000000000000000       0x34 drawing.o
+ .text.HighlightOffset
+                0x0000000000000000      0x100 drawing.o
+ .text.Highlight
+                0x0000000000000000       0x24 drawing.o
+ .text.BlahChar
+                0x0000000000000000       0x28 drawing.o
+ .text.BlahNewline
+                0x0000000000000000       0x28 drawing.o
+ .text.Blah     0x0000000000000000      0x218 drawing.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 drawing.o
+ .text          0x0000000000000000        0x0 gpu.o
+ .data          0x0000000000000000        0x0 gpu.o
+ .reginfo       0x0000000000000000       0x18 gpu.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 gpu.o
+ .pdr           0x0000000000000000      0x1c0 gpu.o
+ .text.WaitIdle
+                0x0000000000000000       0x60 gpu.o
+ .text.WaitDMA  0x0000000000000000       0x54 gpu.o
+ .text.WaitDone
+                0x0000000000000000       0x3c gpu.o
+ .text.SendList
+                0x0000000000000000       0x9c gpu.o
+ .text.SetPageDepth
+                0x0000000000000000       0x64 gpu.o
+ .text.DrawPixel
+                0x0000000000000000       0xc8 gpu.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 gpu.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+loader           0x00000000800ff800 0x0000000000000800
+ram              0x0000000080010000 0x00000000001f0000 xrw
+dcache           0x000000001f800000 0x0000000000000400
+kttyram          0x000000000000c000 0x0000000000002000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD littlelibc.o
+LOAD main.o
+LOAD nugget/crt0/crt0.o
+LOAD utility.o
+LOAD drawing.o
+LOAD gpu.o
+                0x0000000080100000                TLOAD_ADDR = 0x80100000
+                0x0000000080100000                TLOAD_ADDR = DEFINED (TLOAD_ADDR)?TLOAD_ADDR:0x80010000
+                0x0000000080200000                __ram_top = (ORIGIN (ram) + LENGTH (ram))
+                0x00000000801fff00                __sp = (__ram_top - 0x100)
+                0x000000001f800000                __dcache = ORIGIN (dcache)
+                0x000000001f800400                __dcache_top = (ORIGIN (dcache) + LENGTH (dcache))
+                0x0000000000000870                __bss_len = (__bss_end - __bss_start)
+                0xffffffff7ff0c000                __ftext_len = (__ftext_end - __ftext_start)
+                0x00000000800f5000                __fdata_len = (__fdata_end - __fdata_start)
+                0x0000000080200000                __stack_start = (ORIGIN (ram) + LENGTH (ram))
+                0x0000000000000000                __ktty_length = (__ktty_dest_end - __ktty_dest_start)
+
+.PSX_EXE_Header
+                0x00000000800ff800      0x800
+                0x00000000800ff800        0x1 BYTE 0x50
+                0x00000000800ff801        0x1 BYTE 0x53
+                0x00000000800ff802        0x1 BYTE 0x2d
+                0x00000000800ff803        0x1 BYTE 0x58
+                0x00000000800ff804        0x1 BYTE 0x20
+                0x00000000800ff805        0x1 BYTE 0x45
+                0x00000000800ff806        0x1 BYTE 0x58
+                0x00000000800ff807        0x1 BYTE 0x45
+                0x00000000800ff808        0x4 LONG 0x0
+                0x00000000800ff80c        0x4 LONG 0x0
+                0x00000000800ff810        0x4 LONG 0x80100000 ABSOLUTE (_start)
+                0x00000000800ff814        0x4 LONG 0x0
+                0x00000000800ff818        0x4 LONG 0x80100000 TLOAD_ADDR
+                0x00000000800ff81c        0x4 LONG 0x1000 (__ftext_len + __fdata_len)
+                0x00000000800ff820        0x4 LONG 0x0
+                0x00000000800ff824        0x4 LONG 0x0
+                0x00000000800ff828        0x4 LONG 0x0
+                0x00000000800ff82c        0x4 LONG 0x0
+                0x00000000800ff830        0x4 LONG 0x801fff00 DEFINED (_sp)?ABSOLUTE (_sp):0x801fff00
+                0x00000000800ff834        0x4 LONG 0x0
+                0x0000000080100000                . = (. + 0x7c8)
+ *fill*         0x00000000800ff838      0x7c8 
+                0x0000000080100000                __ftext_start = ABSOLUTE (.)
+
+.text           0x0000000080100000      0x990
+ *(.start)
+ .start         0x0000000080100000       0x38 nugget/crt0/crt0.o
+                0x0000000080100000                _start
+ *(.init)
+ *(SORT_NONE(.fini))
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup.main
+                0x0000000080100038       0xc0 main.o
+                0x0000000080100038                main
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.FT_RxStatus
+                0x00000000801000f8       0x18 main.o
+                0x00000000801000f8                FT_RxStatus
+ .text.FT_SendByte
+                0x0000000080100110       0x34 main.o
+                0x0000000080100110                FT_SendByte
+ .text.FT_ReadByte
+                0x0000000080100144       0x34 main.o
+                0x0000000080100144                FT_ReadByte
+ .text.FT_Read32
+                0x0000000080100178       0x48 main.o
+                0x0000000080100178                FT_Read32
+ .text.CheckCommand
+                0x00000000801001c0      0x1e0 main.o
+                0x00000000801001c0                CheckCommand
+ .text.IsPAL    0x00000000801003a0       0x3c utility.o
+                0x00000000801003a0                IsPAL
+ .text.InCriticalSection
+                0x00000000801003dc       0x14 utility.o
+                0x00000000801003dc                InCriticalSection
+ .text.EnterCritical
+                0x00000000801003f0       0x3c utility.o
+                0x00000000801003f0                EnterCritical
+ .text.ExitCritical
+                0x000000008010042c       0x18 utility.o
+                0x000000008010042c                ExitCritical
+ .text.Draw     0x0000000080100444       0x18 drawing.o
+                0x0000000080100444                Draw
+ .text.BorderTileColor
+                0x000000008010045c       0xa4 drawing.o
+                0x000000008010045c                BorderTileColor
+ .text.DrawBG   0x0000000080100500       0x40 drawing.o
+                0x0000000080100500                DrawBG
+ .text.InitGPU  0x0000000080100540      0x15c gpu.o
+                0x0000000080100540                InitGPU
+ .text.WaitGPU  0x000000008010069c       0x64 gpu.o
+                0x000000008010069c                WaitGPU
+ .text.EnableDisplay
+                0x0000000080100700       0x60 gpu.o
+                0x0000000080100700                EnableDisplay
+ .text.DrawTile
+                0x0000000080100760       0xc8 gpu.o
+                0x0000000080100760                DrawTile
+ .text.StartDrawing
+                0x0000000080100828        0x8 gpu.o
+                0x0000000080100828                StartDrawing
+ .text.VSync    0x0000000080100830       0x74 gpu.o
+                0x0000000080100830                VSync
+ .text.Flip     0x00000000801008a4       0xc4 gpu.o
+                0x00000000801008a4                Flip
+ .text.EndDrawing
+                0x0000000080100968       0x1c gpu.o
+                0x0000000080100968                EndDrawing
+                0x0000000080100990                . = ALIGN (0x10)
+ *fill*         0x0000000080100984        0xc 
+ *(.init)
+                0x0000000080100990                . = ALIGN (0x10)
+ *(.fini)
+                0x0000000080100990                __ktty_src = .
+
+.kttytext       0x000000000000c000        0x0 load address 0x0000000080100990
+                0x000000000000c000                __ktty_dest_start = ABSOLUTE (.)
+ *(.kttytext)
+                0x000000000000c000                __ktty_dest_end = ABSOLUTE (.)
+                0x000000000000c000                . = ALIGN (0x10)
+                0x000000000000c000                . = ALIGN (0x10)
+                0x000000000000c000                __text_end = .
+                0x000000000000c000                __ftext_end = ABSOLUTE (.)
+                0x000000000000c000                __fdata_start = ABSOLUTE (.)
+
+.rodata         0x0000000080100990       0x24
+ *(.rodata .rodata.* .rdata .rdata.* .gnu.linkonce.r.*)
+                0x0000000080100990                . = ALIGN (0x10)
+                0x0000000080100990                __preinit_array_start = .
+ *(.preinit_array)
+                0x0000000080100990                __preinit_array_end = .
+                0x0000000080100990                . = ALIGN (0x10)
+                0x0000000080100990                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                0x0000000080100990                . = ALIGN (0x10)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+                0x0000000080100990                __init_array_end = .
+                0x0000000080100990                . = ALIGN (0x10)
+                0x0000000080100990                __fini_array_start = .
+ *(.fini_array)
+ *(SORT_BY_NAME(.fini_array.*))
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+                0x0000000080100990                __fini_array_end = .
+                0x0000000080100990                __build_id = .
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000080100990       0x24 littlelibc.o
+                0x00000000801009b4                __build_id_end = .
+
+.rodata1
+ *(.rodata1)
+                0x00000000801009b4                __data_start = .
+
+.data           0x00000000801009c0      0x640
+ *(.a0table)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000801009c0       0x10 main.o
+                0x00000000801009c0                ftdi_stat
+                0x00000000801009c4                ftdi_data
+ *(.data1)
+ *(.got.plt)
+ *(.got)
+                0x0000000080101000                . = ALIGN (0x800)
+ *fill*         0x00000000801009d0      0x630 
+                0x0000000080101000                . = ALIGN (0x4)
+                0x0000000080101000                __data_end = .
+                0x0000000080101000                __fdata_end = .
+                0x0000000080101000                . = ALIGN (0x4)
+                0x0000000080101000                __bss_start = .
+
+.sbss           0x0000000080101000      0x870
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000080101000      0x860 drawing.o
+                0x0000000080101000                lastLineRepeatable
+                0x0000000080101004                lastLogPos
+                0x0000000080101008                logPos
+                0x000000008010100c                logBase
+                0x0000000080101010                headerLogBuffer
+                0x0000000080101810                frameCounter
+                0x0000000080101814                h2
+                0x0000000080101834                h1
+ .bss           0x0000000080101860       0x10 gpu.o
+                0x0000000080101860                displayBufferY
+                0x0000000080101864                drawBufferY
+ *(COMMON)
+                0x0000000080101870                . = ALIGN (0x4)
+                0x0000000080101870                __bss_end = .
+                0x0000000080101870                __heap_start = .
+                0x0000000080101870                __end = .
+
+/DISCARD/
+ *(.MIPS.abiflags)
+ *(.rel.iplt)
+ *(.rela.iplt)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.plt)
+ *(.iplt)
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(psx232h_debug.elf elf32-tradlittlemips)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ .mdebug.abi32  0x0000000000000000        0x0 main.o
+ .mdebug.abi32  0x0000000000000000        0x0 utility.o
+ .mdebug.abi32  0x0000000000000000        0x0 drawing.o
+ .mdebug.abi32  0x0000000000000000        0x0 gpu.o
+
+.comment        0x0000000000000000       0x2b
+ .comment       0x0000000000000000       0x2b main.o
+                                         0x2c (size before relaxing)
+ .comment       0x000000000000002b       0x2c utility.o
+ .comment       0x000000000000002b       0x2c drawing.o
+ .comment       0x000000000000002b       0x2c gpu.o
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ .gnu.attributes
+                0x0000000000000000       0x10 main.o
+ .gnu.attributes
+                0x0000000000000010       0x10 nugget/crt0/crt0.o
+ .gnu.attributes
+                0x0000000000000020       0x10 utility.o
+ .gnu.attributes
+                0x0000000000000030       0x10 drawing.o
+ .gnu.attributes
+                0x0000000000000040       0x10 gpu.o
+
+.pdr            0x0000000000000000        0x0
+ .pdr           0x0000000000000000        0x0 nugget/crt0/crt0.o
+
+.debug_info     0x0000000000000000     0x177d
+ .debug_info    0x0000000000000000      0x5ed main.o
+ .debug_info    0x00000000000005ed       0x26 nugget/crt0/crt0.o
+ .debug_info    0x0000000000000613      0x33a utility.o
+ .debug_info    0x000000000000094d      0x964 drawing.o
+ .debug_info    0x00000000000012b1      0x4cc gpu.o
+
+.debug_abbrev   0x0000000000000000      0x7a9
+ .debug_abbrev  0x0000000000000000      0x1ce main.o
+ .debug_abbrev  0x00000000000001ce       0x14 nugget/crt0/crt0.o
+ .debug_abbrev  0x00000000000001e2      0x1a9 utility.o
+ .debug_abbrev  0x000000000000038b      0x2aa drawing.o
+ .debug_abbrev  0x0000000000000635      0x174 gpu.o
+
+.debug_loc      0x0000000000000000     0x100f
+ .debug_loc     0x0000000000000000      0x333 main.o
+ .debug_loc     0x0000000000000333      0x124 utility.o
+ .debug_loc     0x0000000000000457      0x8e4 drawing.o
+ .debug_loc     0x0000000000000d3b      0x2d4 gpu.o
+
+.debug_aranges  0x0000000000000000      0x1f0
+ .debug_aranges
+                0x0000000000000000       0x58 main.o
+ .debug_aranges
+                0x0000000000000058       0x20 nugget/crt0/crt0.o
+ .debug_aranges
+                0x0000000000000078       0x78 utility.o
+ .debug_aranges
+                0x00000000000000f0       0x78 drawing.o
+ .debug_aranges
+                0x0000000000000168       0x88 gpu.o
+
+.debug_ranges   0x0000000000000000      0x1e8
+ .debug_ranges  0x0000000000000000       0x80 main.o
+ .debug_ranges  0x0000000000000080       0x68 utility.o
+ .debug_ranges  0x00000000000000e8       0x88 drawing.o
+ .debug_ranges  0x0000000000000170       0x78 gpu.o
+
+.debug_line     0x0000000000000000     0x1099
+ .debug_line    0x0000000000000000      0x398 main.o
+ .debug_line    0x0000000000000398       0x4a nugget/crt0/crt0.o
+ .debug_line    0x00000000000003e2      0x23e utility.o
+ .debug_line    0x0000000000000620      0x61e drawing.o
+ .debug_line    0x0000000000000c3e      0x45b gpu.o
+
+.debug_str      0x0000000000000000      0x688
+ .debug_str     0x0000000000000000      0x254 main.o
+                                        0x289 (size before relaxing)
+ .debug_str     0x0000000000000254       0x1f nugget/crt0/crt0.o
+                                         0x3d (size before relaxing)
+ .debug_str     0x0000000000000273       0xf0 utility.o
+                                        0x256 (size before relaxing)
+ .debug_str     0x0000000000000363      0x239 drawing.o
+                                        0x3da (size before relaxing)
+ .debug_str     0x000000000000059c       0xec gpu.o
+                                        0x2b8 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x570
+ .debug_frame   0x0000000000000000       0xe0 main.o
+ .debug_frame   0x00000000000000e0      0x178 utility.o
+ .debug_frame   0x0000000000000258      0x128 drawing.o
+ .debug_frame   0x0000000000000380      0x1f0 gpu.o

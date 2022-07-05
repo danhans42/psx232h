@@ -1,0 +1,25 @@
+Name       FTDI;
+Partno     None;
+Date       07/26/00;
+Revision   02;
+Designer   danhans42;
+Company    none;
+Assembly   U00;
+Device     g22v10 ;
+
+
+/**  Inputs  **/
+
+Pin   1  = WR_IN;
+Pin   2  = RD_IN;
+Pin   3  = CS_IN;
+Pin   4  = RST;
+Pin   23  = WR_OUT;
+Pin   22  = RD_OUT;
+Pin   21  = CS_OUT;
+
+
+!RD_OUT = !RD_IN & RST;
+!WR_OUT = !WR_IN & RST;
+!CS_OUT = !CS_IN & RST;
+
