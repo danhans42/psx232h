@@ -49,6 +49,8 @@ We also bring /RESET into the mix for future proofing - more on that to follow. 
 
 CUPL source and the JED for programming is in the ATF22V10C folder. To build the CUPL into a JED you will need to use WinCUPL.
 
+Also, you will need a way to program the EEPROM of your FT232h - I use FT_Prog for ease, it is Windows only unfortunately. You will need to set your Channel A to CPU FIFO and esnure its setup as VCP (not D2XX).
+
 Schematic
 ![enter image description here](https://github.com/danhans42/psx232h/blob/main/hardware/psx232h_schem.png?raw=true)
 
