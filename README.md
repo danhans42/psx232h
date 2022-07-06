@@ -32,7 +32,7 @@ To actually run the EXE we need a way to do that. I chose freepsxboot so it coul
 
 Once you have done the above you can then use the scripts in the folder to make the exe, compress it and build a freepsxboot image from it.
 
-I will try and expand this section to be more comprehensive in the future.
+When the PS232h program is running, it should show a green screen to say its detected an FT232h and its ready, red means its not detected/usb cable not connected. Yellow means busy.
 
 ## Hardware
 
