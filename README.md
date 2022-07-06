@@ -2,7 +2,7 @@
 
 
 ## What ?
-psx232h is a project which allows a Sony PlayStation(PSX) console to communicate with the outside world via an FTDI FT232h module attached to the PlayStation Expansion Port. Primary focus being on running code over a cable.
+psx232h is a project which allows a Sony PlayStation(PSX) console to communicate with the outside world via an FTDI FT232h module attached to the PlayStation Expansion Port. Primary focus being on running code over a cable. This was more aimed at being a test exercise rather than a solution to a problem - so it will not really be improved other than fixing the macos client issue.
 
 Why you might ask? We have unirom/hit-serial/sioloader etc? Well its fast, like really f**king fast and also it leaves the PlayStation serial port free for other uses.
 
@@ -15,7 +15,7 @@ The repo contains everything you should need to get this up and running. If you 
 
 **PlayStation**
 
-To install the software to a memory card you will need a way to transfer the memory card image to a PSX memory card. You can do this with Unirom, Memcarduino or some other thing. The PSX side code is small and basic so it can be loaded quickly from memory card.
+To install the software to a memory card you will need a way to transfer the memory card image to a PSX memory card. You can do this with Unirom, Memcarduino or some other thing. The PSX side code is small and basic so it can be loaded quickly from memory card. The source and binaries are all in the /psx folder.
 
 **Hardware**
 
@@ -23,9 +23,12 @@ Hardware wise you need to connect the hardware as per the schematics in the /har
 
 The project currently uses a ATF22V10C PLD device which needs to be programmed. I use a TL866 programmer for this. I have included the CUPL source and a JED file ready for programming. The ATF22v basically delays the control signals slightly so the FTDI reads/writes the data bus correctly. You may be able to replace this with an off the self discrete (hex inverter?) but mileage may vary. We also bring /RESET into the mix for future proofing - more on that to follow.
  
+CUPL source/JED is in the ATF22V10C folder. To build the CUPL into a JED you will need to use WinCUPL.
+Hardware connections/schematic is in the /hardware folder.
+
  **PC Client** 
  
-The client is simple - it is supposed to be. It just needs Python 3 (tested on 3.7) and Pyserial installing. The client supports uploading EXEs, uploading data to an address, dump memory, reboot (via BIOS) and a jump/call function. 
+The client is simple - it is supposed to be. It just needs Python 3 (tested on 3.7) and Pyserial installing. The client supports uploading EXEs, uploading data to an address, dump memory, reboot (via BIOS) and a jump/call function. This can be found in the /pc folder.
 
 ## Thanks
 
