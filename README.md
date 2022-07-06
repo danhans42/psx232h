@@ -28,7 +28,8 @@ The project currently uses a ATF22V10C PLD device which needs to be programmed. 
 
 CUPL source/JED is in the ATF22V10C folder. To build the CUPL into a JED you will need to use WinCUPL.
 Hardware connections/schematic is in the /hardware folder.
- **PC Client** 
+
+**PC Client** 
  
 The client is simple - it is supposed to be. It just needs Python 3 (tested on 3.7) and Pyserial installing. The client supports uploading EXEs, uploading data to an address, dump memory, reboot (via BIOS) and a jump/call function. This can be found in the /pc folder.
 
