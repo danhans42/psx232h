@@ -38,3 +38,6 @@ The client is simple - it is supposed to be. It just needs Python 3 (tested on 3
 Built using sicklebrick hello world example (nugget).
 Also uses ps1-packer by Nicolas Noble
 and freepsxboot builder by Bradlin.
+
+For more playstation development chat join us on our discord.. visit http://psx.dev/
+
