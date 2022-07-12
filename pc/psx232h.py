@@ -7,16 +7,10 @@
 import sys
 import serial
 import os
+import time
+from time import sleep
 
 args = int(len(sys.argv))
-
-def progress(count, total, status=''):
-    bar_len = 60
-    filled_len = int(round(bar_len * count / float(total)))
-    percents = round(100.0 * count / float(total), 1)
-    bar = '=' * filled_len + '-' * (bar_len - filled_len)
-    sys.stdout.write("%s Data [%s] %s%s %s\r" % (stat,bar, percents, "%", status))
-    sys.stdout.flush()
 
 def usage():
     sys.stdout.write("-h                                  help (this screen)\n")
@@ -58,10 +52,11 @@ def download():
 	ser.write(b'\x64')
 	ser.write(addr)
 	ser.write(len)
-	progress(1, 100, status='')
+	sys.stdout.write("Reading Data...")
+	sys.stdout.flush()
 	buffer=ser.read(int(sys.argv[5],16))
-	progress(100, 100, status='')
-	sys.stdout.write("\nOperation Complete\n\n")
+	sys.stdout.write(" Done!\n")
+	sys.stdout.write("Operation Complete\n\n")
 	dump.write(buffer)
 	dump.close()
 
@@ -78,42 +73,42 @@ def gotoaddr():
 	ser.write(addr)
 	sys.stdout.write("\n\nOperation Complete\n\n")
 
-
 def uploadexe():
-    serialport = sys.argv[2]
-    filename = sys.argv[3]
-    filesize = os.path.getsize(filename)
-    inputfile = open(filename, 'rb')
-    inputfile.seek(0, 0)
-    header = inputfile.read(2048)
-    inputfile.seek(16,0)
-    pc = inputfile.read(4)
-    inputfile.seek(24,0)
-    addr= inputfile.read(4)
-    inputfile.seek(28,0)
-    fsz = inputfile.read(4)
-    sys.stdout.write("Port       : ")
-    sys.stdout.write(serialport)
-    sys.stdout.write("\nEXE Name   : {}\n".format(filename))
-    sys.stdout.write("File Size  : {} bytes\n".format(filesize))
-    ser = serial.Serial(serialport,115200,writeTimeout = 1)
-    ser.write(b'\x63')
-    sys.stdout.write("Command    : Execute PS-X EXE\n\n")
-    ser.write(pc)
-    sys.stdout.write("Sending Exec Address\n")
-    ser.write(addr)
-    sys.stdout.write("Sending Load Address\n")
-    ser.write(fsz)
-    sys.stdout.write("Sending Filesize\n")
-    offset = 2048
-    while offset < filesize:
-        inputfile.seek(offset,0)
-        bin = inputfile.read(2048)
-        ser.write(bin)
-        offset += 2048
-        progress(offset, filesize, status='')
-    sys.stdout.write("\nExecuting")
-    sys.stdout.write("\nOperation Complete\n\n")
+	serialport = sys.argv[2]
+	filename = sys.argv[3]
+	filesize = os.path.getsize(filename)
+	inputfile = open(filename, 'rb')
+	inputfile.seek(0, 0)
+	header = inputfile.read(2048)
+	inputfile.seek(16,0)
+	pc = inputfile.read(4)
+	inputfile.seek(24,0)
+	addr= inputfile.read(4)
+	inputfile.seek(28,0)
+	fsz = inputfile.read(4)
+	sys.stdout.write("Port       : ")
+	sys.stdout.write(serialport)
+	sys.stdout.write("\nEXE Name   : {}\n".format(filename))
+	sys.stdout.write("File Size  : {} bytes\n".format(filesize))
+	ser = serial.Serial(serialport,115200,writeTimeout = 100)
+	ser.write(b'\x63')
+	sys.stdout.write("Command    : Upload & execute PS-X EXE\n\n")
+	ser.write(pc)
+	sys.stdout.write("Sending Exec Address\n")
+	ser.write(addr)
+	sys.stdout.write("Sending Load Address\n")
+	ser.write(fsz)
+	sys.stdout.write("Sending Filesize\n")
+	inputfile.seek(2048,0)
+	bin = inputfile.read(filesize-2048)
+	sys.stdout.write("Sending Data...")
+	sys.stdout.flush()
+	ser.write(bin)
+	sys.stdout.write(" Done!\n")
+	sys.stdout.write("Executing\n")
+	sys.stdout.write("Operation Complete\n\n")
+	sleep(0.1)
+
 
 def upload():
 	serialport = sys.argv[2]
@@ -130,17 +125,19 @@ def upload():
 	sys.stdout.write(hex(int(sys.argv[4],16)))
 	sys.stdout.write("\n")
 	bin = inputfile.read(os.path.getsize(filename))
-	ser = serial.Serial(serialport,115200,writeTimeout = 1)
+	ser = serial.Serial(serialport,115200,writeTimeout = 100)
 	ser.write(b'\x62')
 	sys.stdout.write("Command    : Upload data\n\n")
 	ser.write(addr)
 	sys.stdout.write("Sending Load Address\n")
 	ser.write(filesize)
 	sys.stdout.write("Sending Filesize\n")
-	progress(1, 100, status='')
+	sys.stdout.write("Sending Data...")
+	sys.stdout.flush()
 	ser.write(bin)
-	progress(100, 100, status='')
-	sys.stdout.write("\nOperation Complete\n\n")
+	sys.stdout.write(" Done!\n")
+	sys.stdout.write("Operation Complete\n\n")
+	sleep(0.1)
 
 #main
 
